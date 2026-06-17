@@ -1,0 +1,21 @@
+# Allow all search engines to crawl the entire website
+User-agent: *
+Disallow:
+
+# Link to your sitemap
+Sitemap: https://www.vijayrodrigues.com/sitemap.xml
+
+# Block access to specific directories (optional)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+
+# Block specific file types (optional)
+Disallow: /*.pdf$
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+
+# Allow search engines to crawl and index the following sections (optional)
+Allow: /public/
+Allow: /blog/
