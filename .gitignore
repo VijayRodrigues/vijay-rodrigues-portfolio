@@ -18,4 +18,8 @@ Thumbs.db
 
 # Python cache
 .pytest_cache/
+<<<<<<< HEAD
 .mypy_cache/
+=======
+.mypy_cache/
+>>>>>>> 079ce92e844a45b5339b81788a260c1525079aea
