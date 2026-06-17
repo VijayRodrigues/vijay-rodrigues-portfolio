@@ -23,3 +23,45 @@ Thumbs.db
 =======
 .mypy_cache/
 >>>>>>> 079ce92e844a45b5339b81788a260c1525079aea
+
+
+
+# ===========================
+# Virtual Environment
+# ===========================
+venv_portfolio/
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+
+# ===========================
+# VS Code
+# ===========================
+.vscode/
+
+# ===========================
+# Test & Cache
+# ===========================
+.pytest_cache/
+.mypy_cache/
+
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# SSH Keys (DO NOT COMMIT)
+# ===========================
+github_actions_pythonanywhere
+github_actions_pythonanywhere.pub
