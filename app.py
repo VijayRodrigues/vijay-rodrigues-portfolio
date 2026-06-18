@@ -1,10 +1,10 @@
 from flask import Flask, render_template, redirect, request, url_for, send_from_directory
-from flask_caching import Cache
+#from flask_caching import Cache
 
 app = Flask(__name__)
 
 # --- Flask-Caching Config ---
-cache = Cache(app, config={'CACHE_TYPE': 'simple'})
+#cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 # --- Redirect non-www to www for SEO ---
 @app.before_request
@@ -15,7 +15,7 @@ def redirect_non_www():
 
 # --- Main route ---
 @app.route('/')
-@cache.cached(timeout=60)  # cache this page for 60 seconds
+#@cache.cached(timeout=60)  # cache this page for 60 seconds
 def index():
     return render_template("index.html")
 
