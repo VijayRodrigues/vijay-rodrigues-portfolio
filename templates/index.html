@@ -1,442 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="UTF-8">
-  <meta name="description" content="Vijay Rodrigues - Data Engineer. Explore projects, skills, and certifications. Connect for data solutions, collaborations, and opportunities.">
-  <meta name="keywords" content="Data Engineer, Data Engineering Portfolio, Machine Learning, Data Projects, Python, SQL, Data Engineer Skills, Data Engineering Certifications, Data Science">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vijay Rodrigues - Senior Data Engineer. Explore projects, skills, and certifications.">
+  <meta name="keywords" content="Data Engineer, PySpark, Databricks, Snowflake, dbt, Airflow, Python, SQL">
   <meta name="author" content="Vijay Rodrigues">
   <title>Vijay Rodrigues | Data Engineer Portfolio</title>
 
-  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1747161291/favicon-96x96_wzhm82.png" sizes="96x96" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet"  href="{{ url_for('static', filename='style_css.css')}}">
-  <link rel="stylesheet"  href="{{ url_for('static', filename='fonts_1.css')}}">
-  <link rel="stylesheet"  href="{{ url_for('static', filename='fonts_2.css')}}">
-
-  
-
- <!--  <script src="{{ url_for('static', filename= 'style_js.js')}}"></script> -->
-
-<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>  -->
-  <script src="{{ url_for('static', filename= 'GoogleTranslate_js.js')}}"></script>
-
-
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1747161291/favicon-96x96_wzhm82.png" sizes="96x96">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_css.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts_1.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts_2.css') }}">
+  <script src="{{ url_for('static', filename='GoogleTranslate_js.js') }}"></script>
 </head>
+
 <body>
-
-
- <!-- Translation Dropdown -->
- <div class="trans">
-  <div class="notranslate">
-    <select class="trans_ops" onchange="doGTranslate(this);">
-      <option value="en|en">English (default)</option>
-      <option value="en|ar">Arabic</option>
-      <option value="en|zh-CN">Chinese (Simplified)</option>
-      <option value="en|fr">French</option>
-      <option value="en|de">German</option>
-      <option value="en|hi">Hindi</option>
-      <option value="en|ja">Japanese</option>
-      <option value="en|kn">Kannada</option>
-      <option value="en|ko">Korean</option>
-      <option value="en|pt">Portuguese</option>
-      <option value="en|ru">Russian</option>
-      <option value="en|es">Spanish</option>      
-    </select>
-    <div id="google_translate_element2"></div>
-  </div>
-</div>
-
-
-
-  <div class="container">
-    <nav>
-  <a href="{{ url_for('index') }}">Home</a>
-  <a href="#about">About</a>
-  <a href="#employment">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>    
-  <div class="dropdown">
-    <a href="#qualifications" onclick="event.preventDefault();">Qualifications ▼</a>
-    <span id="qualifications" style="display:none;"></span>
-    <div class="dropdown-content">
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
+  <!-- Translation Dropdown -->
+  <div class="trans">
+    <div class="notranslate">
+      <select class="trans_ops" onchange="doGTranslate(this);">
+        <option value="en|en">English (default)</option>
+        <option value="en|ar">Arabic</option>
+        <option value="en|zh-CN">Chinese (Simplified)</option>
+        <option value="en|fr">French</option>
+        <option value="en|de">German</option>
+        <option value="en|hi">Hindi</option>
+        <option value="en|ja">Japanese</option>
+        <option value="en|kn">Kannada</option>
+        <option value="en|ko">Korean</option>
+        <option value="en|pt">Portuguese</option>
+        <option value="en|ru">Russian</option>
+        <option value="en|es">Spanish</option>
+      </select>
+      <div id="google_translate_element2"></div>
     </div>
   </div>
 
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="#about">About</a>
+      <a href="#employment">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <div class="dropdown">
+        <a href="#qualifications" onclick="event.preventDefault();">Qualifications ▼</a>
+        <div class="dropdown-content">
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+        </div>
+      </div>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
+    <!-- Header -->
     <header>
       <div>
-
         <h1>Vijay Ashley Rodrigues</h1>
+        <p>Senior Data Engineer | Snowflake · Azure Databricks · Semantic Modeling & AI Analytics</p>
 
-        <p>Senior Data Engineer | Snowflake · Azure Databricks · Semantic Modeling & AI Analytics.</p>
-        
-         
-
-        <!-- Simple Action Buttons -->
         <div class="header-buttons">
           <div class="header-btn resume-dropdown">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795948/resume_devicons_inverted_dfruml.png" alt="Resume" style="height: 25px; width: 25px; margin-right: 8px;"> My CV / Resume ▼
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795948/resume_devicons_inverted_dfruml.png" alt="Resume" style="height: 25px; width: 25px; margin-right: 8px;">
+            My CV / Resume ▼
             <div class="resume-dropdown-content">
-              <a href="{{ url_for('static', filename='vijay-rodrigues-data-engineer.pdf')}}" target="_blank" class="header-btn">View Resume</a>
-              <a href="{{ url_for('static', filename='vijay-rodrigues-data-engineer.pdf')}}" download class="header-btn">Download Resume</a>
+              <a href="{{ url_for('static', filename='vijay-rodrigues-data-engineer.pdf') }}" target="_blank" class="header-btn">View Resume</a>
+              <a href="{{ url_for('static', filename='vijay-rodrigues-data-engineer.pdf') }}" download class="header-btn">Download Resume</a>
             </div>
           </div>
           <a href="https://www.linkedin.com/in/vijayrodrigues" class="header-btn" target="_blank">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795276/linkedin_devicons_inverted_d6aiej.png" alt="LinkedIn" style="height: 25px; width: 25px; margin-right: 8px;"> LinkedIn
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795276/linkedin_devicons_inverted_d6aiej.png" alt="LinkedIn" style="height: 25px; width: 25px; margin-right: 8px;">
+            LinkedIn
           </a>
           <a href="https://github.com/VijayRodrigues" class="header-btn" target="_blank">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795572/github_devicons_inverted_cde3kl.png" alt="GitHub" style="height: 25px; width: 25px; margin-right: 8px;"> GitHub
-          </a>
-          <a href="https://www.hackerrank.com/profile/vijayrodrigues18" class="header-btn" target="_blank">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746478013/download_lucqw7.svg" alt="HackerRank" style="height: 25px; width: 25px; margin-right: 8px;"> HackerRank
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746795572/github_devicons_inverted_cde3kl.png" alt="GitHub" style="height: 25px; width: 25px; margin-right: 8px;">
+            GitHub
           </a>
         </div>
       </div>
       <div class="header-image"></div>
     </header>
 
-    
+    <!-- About Section -->
+    <section id="about" class="about" itemscope itemtype="https://schema.org/Person">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I've spent <span id="exp-years">6</span> years in the trenches of data engineering — the kind of work that nobody notices when it's running well, and everyone panics about when it isn't.
+        </p>
+        <p>
+          I've built <span>pipelines that move and validate hundreds of millions of records</span> across time zones, migrated legacy systems without breaking what depends on them, and quietly cut runtimes that were costing teams hours every day. My stack — <span>Databricks</span>, <span>Snowflake</span>, <span>PySpark</span>, <span>dbt</span>, <span>Airflow</span>, <span>Azure</span> — isn't a list of buzzwords. It's what I use every day to solve real problems.
+        </p>
+        <p>
+          Where I'm headed now is the intersection of <span>data engineering and AI</span> — building the kind of semantic layers and intelligent pipelines that make AI actually useful in production, not just in demos.
+        </p>
+        <p>
+          <span>Databricks Certified Data Engineer Associate</span>. Pursuing a <span>Master of Data Science at Deakin University</span>.
+        </p>
+        <p>
+          I write about what I build at <a href="https://dev.to/vijayrodrigues" target="_blank" rel="noopener noreferrer">dev.to/vijayrodrigues</a>.
+        </p>
+      </div>
+    </section>
 
-<section id="about" class="about" itemscope itemtype="https://schema.org/Person">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I've spent <span id="exp-years">6</span> years in the trenches of data engineering — the kind of work that nobody notices when it's running well, and everyone panics about when it isn't.
-    </p>
-    <p>
-      I've built <span>pipelines that move and validate hundreds of millions of records</span> across time zones, migrated legacy systems without breaking what depends on them, and quietly cut runtimes that were costing teams hours every day. My stack — <span>Databricks</span>, <span>Snowflake</span>, <span>PySpark</span>, <span>dbt</span>, <span>Airflow</span>, <span>Azure</span> — isn't a list of buzzwords. It's what I use every day to solve real problems.
-    </p>
-    <p>
-      Where I'm headed now is the intersection of <span>data engineering and AI</span> — building the kind of semantic layers and intelligent pipelines that make AI actually useful in production, not just in demos.
-    </p>
-    <p>
-      <span>Databricks Certified Data Engineer Associate</span>. Pursuing a <span>Master of Data Science at Deakin University</span>.
-    </p>
-    <p>
-      I write about what I build at
-      <a href="https://dev.to/vijayrodrigues" target="_blank" rel="noopener noreferrer">dev.to/vijayrodrigues</a>.
-    </p>
-  </div>
-</section>
-
-
-
-  
-
+    <!-- Employment Section -->
     <section class="employment" id="employment" itemscope itemtype="https://schema.org/Organization">
-  <h2 class="section-title">Experience</h2>
-  <div class="employment-container">
-    
-    <div class="employment-card chubb-card" onclick="openEmploymentModal('chubb')">
-      <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746476148/chubb_employment_logo_nxmbop.png" alt="Chubb Logo">
-      <h3>Chubb</h3>
-      <p>Dec 2021 - Present</p>
-      <h6>(Click to View)</h6>
+      <h2 class="section-title">Experience</h2>
+      <div class="employment-container">
+        <div class="employment-card chubb-card" onclick="openEmploymentModal('chubb')">
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746476148/chubb_employment_logo_nxmbop.png" alt="Chubb Logo">
+          <h3>Chubb</h3>
+          <p>Dec 2021 - Present</p>
+          <h6>(Click to View)</h6>
+        </div>
+
+        <div class="employment-card proziod-card" onclick="openEmploymentModal('proziod')">
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746475950/proziod_employment_logo_aqukxq.png" alt="Proziod Logo">
+          <h3>Proziod Analytics Pvt Ltd</h3>
+          <p>Aug 2020 - Dec 2021</p>
+          <h6>(Click to View)</h6>
+        </div>
+
+        <div class="employment-card teksystems-card" onclick="openEmploymentModal('teksystems')">
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746476151/teksystems_employment_logo_zq8tfs.png" alt="TEKsystems Logo">
+          <h3>TEKsystems</h3>
+          <p>Jan 2019 – Aug 2020</p>
+          <h6>(Click to View)</h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- Employment Modal -->
+    <div id="employment-modal" class="modal" onclick="clickOutsideModal(event)">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeEmploymentModal()">&times;</span>
+        <h3 id="modal-title">Company Title</h3>
+        <ul id="modal-description"></ul>
+      </div>
     </div>
 
-    <div class="employment-card proziod-card" onclick="openEmploymentModal('tcs')">
-      <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746475950/proziod_employment_logo_aqukxq.png" alt="TCS Logo">
-      <h3>Proziod Analytics Pvt Ltd</h3>
-      <p>Aug 2020 - Dec 2021</p>
-      <h6>(Click to View)</h6>
-    </div>
-
-    <div class="employment-card teksystems-card" onclick="openEmploymentModal('company3')">
-      <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746476151/teksystems_employment_logo_zq8tfs.png" alt="Company 3 Logo">
-      <h3>TEKsystems</h3>
-      <p>Jan 2019 – Aug 2020</p>
-      <h6>(Click to View)</h6>
-    </div>
-  </div>
-</section>
-
-<!-- Modal -->
-<div id="employment-modal" class="modal" onclick="clickOutsideModal(event)">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeEmploymentModal()">&times;</span>
-    <h3 id="modal-title">Company Title</h3>
-    <ul id="modal-description">
-      <!-- JS inserts bullets -->
-    </ul>
-  </div>
-</div>
-    
-    
-
-
-
-
+    <!-- Education Section -->
     <section id="education" class="education-section" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
       <h2>Education</h2>
       <div class="education-container">
         <div class="education-card edu_deakin">
           <div class="education-logo" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746385666/masters_of_science_global_njjdbt.png');"></div>
-          <br>
-          <h3>Master of Data Science <br>(Global)</h3>
-          <p class="education-institute">Deakin <br>University</p>
+          <h3>Master of Data Science (Global)</h3>
+          <p class="education-institute">Deakin University</p>
           <p class="education-year">2025 - pursuing</p>
         </div>
-    
+
         <div class="education-card edu_texas">
           <div class="education-logo" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746384238/pg_aiml_vqcsue.png');"></div>
-          <br>
-          <h3>PG in Artificial Intelligence & Machine Learning</h3>
-          <p class="education-institute">Texas <br>McCombs School of Business</p>
+          <h3>PG in AI & Machine Learning</h3>
+          <p class="education-institute">Texas McCombs School of Business</p>
           <p class="education-year">2024 - 2025</p>
         </div>
-    
+
         <div class="education-card edu_sdm">
           <div class="education-logo" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746383578/masters_college_ons98b.png');"></div>
-          <br>
-          <h3>MBA in Marketing <br>and HR</h3>
-          <p class="education-institute">SDM P.G. Centre for Management <br>Studies and Research</p>
+          <h3>MBA in Marketing & HR</h3>
+          <p class="education-institute">SDM P.G. Centre for Management Studies and Research</p>
           <p class="education-year">2016 - 2018</p>
         </div>
-    
+
         <div class="education-card edu_aloy_bca">
           <div class="education-logo" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746382982/degree_college_looxy3.png');"></div>
-          <br>
           <h3>Bachelor in Computer Applications (BCA)</h3>
-          <p class="education-institute">St. Aloysius College, <br>Mangalore</p>
+          <p class="education-institute">St. Aloysius College, Mangalore</p>
           <p class="education-year">2013 - 2016</p>
         </div>
-  
       </div>
     </section>
 
-
-
-
-
+    <!-- Skills Section -->
     <section id="skills" class="skills" itemscope itemtype="https://schema.org/Person">
       <h2>Skills</h2>
       <div class="skills-table">
         <div class="skills-row">
-          <div class="skills-category-name"> Programming & Scripting Languages</div>
+          <div class="skills-category-name">Core Data Stack</div>
+          <ul>
+            <li>PySpark</li>
+            <li>Databricks</li>
+            <li>Snowflake</li>
+            <li>dbt</li>
+            <li>Apache Airflow</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-category-name">Programming Languages</div>
           <ul>
             <li>Python</li>
-            <li>R</li>
             <li>SQL</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
             <li>Bash</li>
             <li>YAML</li>
             <li>Jinja</li>
           </ul>
         </div>
+
         <div class="skills-row">
-          <div class="skills-category-name">Data Engineering & Analytics</div>
-          <ul>
-            <li>Apache Spark</li>
-            <li>PySpark</li>
-            <li>Databricks</li>
-            <li>Snowflake</li>
-            <li>Data Modeling & Warehousing</li>
-          </ul>
-        </div>
-        <div class="skills-row">
-          <div class="skills-category-name"> Data Integration & Workflow Orchestration</div>
+          <div class="skills-category-name">Data Engineering</div>
           <ul>
             <li>ETL/ELT Pipeline Development</li>
-            <li>Apache Airflow</li>
-            <li>dbt (Data Build Tool)</li>
-            <li>Apache Kafka</li>
-            <li>Azure Data Factory (ADF)</li>
-            <li>SQL Server Integration Services (SSIS)</li>
+            <li>Data Modeling & Warehousing</li>
+            <li>Schema Design</li>
+            <li>Query Optimization</li>
+            <li>Partitioning</li>
           </ul>
         </div>
+
         <div class="skills-row">
-          <div class="skills-category-name"> Database & Data Storage</div>
+          <div class="skills-category-name">Cloud & Databases</div>
           <ul>
+            <li>Azure Data Factory</li>
+            <li>Azure Synapse Analytics</li>
+            <li>Azure Data Lake Storage</li>
             <li>SQL Server</li>
             <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>SQLite</li>
             <li>Oracle</li>
-            <li>MongoDB</li>
-            <li>NoSQL</li>
-            <li>relational databases</li>
           </ul>
         </div>
+
         <div class="skills-row">
-          <div class="skills-category-name"> File Formats</div>
+          <div class="skills-category-name">Data Formats</div>
           <ul>
-            <li>CSV</li>
-            <li>JSON</li>
             <li>Parquet</li>
             <li>Delta</li>
-            <li>Excel (XLSX)</li>
+            <li>JSON</li>
+            <li>CSV</li>
             <li>Avro</li>
           </ul>
         </div>
+
         <div class="skills-row">
-          <div class="skills-category-name"> Performance Tuning & Optimization</div>
-          <ul>
-            <li>Schema Design</li>
-            <li>Partitioning</li>
-            <li>Query Optimization</li>
-          </ul>
-        </div>
-        <div class="skills-row">
-          <div class="skills-category-name">  Cloud Platforms & Data Services</div>
-          <ul>
-            <li>Azure Data Factory (ADF)</li>
-            <li>Azure Synapse Analytics</li>
-            <li>Azure Data Lake Storage (ADLS)</li>
-          </ul>
-        </div>
-        <div class="skills-row">
-          <div class="skills-category-name"> Containerization & Orchestration</div>
-          <ul>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-          </ul>
-        </div>
-        <div class="skills-row">
-          <div class="skills-category-name"> Automation & Web Frameworks</div>
+          <div class="skills-category-name">Web & Automation</div>
           <ul>
             <li>Flask</li>
             <li>FastAPI</li>
-            <li>Selenium WebDriver</li>
-            <li>BeautifulSoup</li>
-            <li>Python Automation Scripts</li>
+            <li>Git & GitHub</li>
+            <li>CI/CD</li>
           </ul>
         </div>
-        <div class="skills-row">
-          <div class="skills-category-name"> Version Control & Collaboration</div>
-          <ul>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>JIRA</li>
-            <li>Confluence</li>
-            <li>Agile / Scrum Methodologies</li>
-            <li>CI / CD</li>
-            <li>code review</li>
-          </ul>
-        </div>     
-        <div class="skills-row">
-          <div class="skills-category-name"> Machine Learning</div>
-          <ul>
-            <li>Scikit-learn</li>
-            <li>Supervised / Unsupervised ML</li>
-            <li>Classification</li>
-            <li>Regression</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-          </ul>
-        </div>
-        <div class="skills-row">
-          <div class="skills-category-name"> Visualization & Dashboards</div>
-          <ul>
-            <li>Streamlit</li>
-          </ul>
-        </div>
-
       </div>
     </section>
 
-
-
-
-   <section id="projects" class="projects" itemscope itemtype="https://schema.org/CreativeWork">
+    <!-- Projects Section -->
+    <section id="projects" class="projects" itemscope itemtype="https://schema.org/CreativeWork">
       <h2>Projects</h2>
       <div class="projects-slider-wrapper">
         <div class="projects-slider" id="projectSlider">
           <!-- Page 1 -->
           <div class="project-page">
-            <div class="project tooltip_projects" data-tooltip="Click here to view detailed information." onclick="openModal('On-Premises SQL Server to Azure SQL Migration', 'SQL Server to Azure SQL Migration – Led end-to-end migration using Azure Migrate and DMS, from assessment to execution, ensuring minimal downtime, data integrity, and post-migration optimization.', 'https://github.com/VijayRodrigues/AzureMigrate-OnPrem2AzureSQL')">
+            <div class="project" onclick="openModal('On-Premises SQL Server to Azure SQL Migration', 'SQL Server to Azure SQL Migration – Led end-to-end migration using Azure Migrate and DMS, from assessment to execution, ensuring minimal downtime, data integrity, and post-migration optimization.', 'https://github.com/VijayRodrigues/AzureMigrate-OnPrem2AzureSQL')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746560821/azuremigrate_project_logo_huctqo.png')"></div>
               <div class="project-content">
-                <h3>On-Premises SQL Server to Azure SQL Migration</h3>
+                <h3>SQL Server to Azure SQL Migration</h3>
                 <p>Migrated on-premises SQL Server workloads to Azure SQL using Azure Migrate and supporting tools.</p>
               </div>
             </div>
-            <div class="project" data-tooltip="Click here to view detailed information." onclick="openModal('Real-Time POS Transactions Monitoring System', 'Built a real-time POS monitoring system with Kafka for data streaming, PySpark for processing, PostgreSQL for storage, and Streamlit for live dashboarding.', 'https://github.com/VijayRodrigues/real-time-pos-kafka')">
+
+            <div class="project" onclick="openModal('Real-Time POS Transactions Monitoring System', 'Built a real-time POS monitoring system with Kafka for data streaming, PySpark for processing, PostgreSQL for storage, and Streamlit for live dashboarding.', 'https://github.com/VijayRodrigues/real-time-pos-kafka')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1749285732/pos_transactions_monitoring_system_jveq6t.png')"></div>
               <div class="project-content">
-                <h3>Real-Time POS Transactions Monitoring System</h3>
-                <p>Real-time monitoring of POS transactions using Kafka, Python, PostgreSQL, and Streamlit.</p>
+                <h3>Real-Time POS Transactions Monitoring</h3>
+                <p>Real-time monitoring using Kafka, PySpark, PostgreSQL, and Streamlit.</p>
               </div>
             </div>
-            <div class="project" onclick="openModal('DBT Model Analyzer with GPT + Lineage', 'A Streamlit app that summarizes DBT models using GPT, shows lineage graphs, tracks column usage, and supports folder-level filtering and environment comparisons — built for faster DBT exploration and documentation.  <br><a href=\'https://genai-dbt-model-analyzer.streamlit.app\' target=\'_blank\'>Click here to view Streamlit App</a>.', 'https://github.com/VijayRodrigues/GenAI_DBT_model_Analyzer')">
+
+            <div class="project" onclick="openModal('DBT Model Analyzer with GPT + Lineage', 'A Streamlit app that summarizes DBT models using GPT, shows lineage graphs, tracks column usage, and supports folder-level filtering and environment comparisons — built for faster DBT exploration and documentation. <br><a href=\"https://genai-dbt-model-analyzer.streamlit.app\" target=\"_blank\">Click here to view Streamlit App</a>.', 'https://github.com/VijayRodrigues/GenAI_DBT_model_Analyzer')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1750443369/dbt_analyser_gpt_lineage_lklyim.png')"></div>
               <div class="project-content">
                 <h3>DBT Model Analyzer with GPT + Lineage</h3>
-                <p>A lightweight Streamlit tool to analyze DBT models using GPT for auto-summarization, visualize lineage graphs, and explore column-level metadata.</p>
+                <p>Analyze DBT models using GPT, visualize lineage graphs, and explore column-level metadata.</p>
               </div>
             </div>
-            <div class="project" onclick="openModal('Flight Price Prediction using Machine Learning', 'Developed a machine learning model using HistGradientBoostingRegressor to predict flight ticket prices for Indian domestic routes. The model was deployed using a Flask web application that allows users to input flight details and receive real-time fare predictions.  <br><a href=\'https://vrflightpred.pythonanywhere.com\' target=\'_blank\'>Click here to view Flask App</a>.', 'https://github.com/VijayRodrigues/Indian_Domestic_Flight_Prediction')">
+
+            <div class="project" onclick="openModal('Flight Price Prediction using Machine Learning', 'Developed a machine learning model using HistGradientBoostingRegressor to predict flight ticket prices for Indian domestic routes. Deployed using a Flask web application. <br><a href=\"https://vrflightpred.pythonanywhere.com\" target=\"_blank\">Click here to view Flask App</a>.', 'https://github.com/VijayRodrigues/Indian_Domestic_Flight_Prediction')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746730515/flight_prediction_logo_dzozwx.png')"></div>
               <div class="project-content">
-                <h3>Flight Price Prediction using Machine Learning</h3>
-                <p>Predicting the cost of Indian domestic flight tickets using machine learning for real-time fare forecasting</p>
+                <h3>Flight Price Prediction using ML</h3>
+                <p>Predicting Indian domestic flight ticket costs using machine learning for real-time fare forecasting.</p>
               </div>
             </div>
-            <div class="project" onclick="openModal('Tesla Stock Price Dashboard', 'Built a dynamic Tableau dashboard to visualize Tesla stock trends using data sourced via the GOOGLEFINANCE function in Google Sheets. The dashboard supports filtering across different timeframes, with daily updates and insights from the past 3 months.   <br><a href=\'https://public.tableau.com/app/profile/vijay.rodrigues/viz/shared/HZ4YZ66YJ\' target=\'_blank\'>Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/TeslaStockPriceDashboard')">
+
+            <div class="project" onclick="openModal('Tesla Stock Price Dashboard', 'Built a dynamic Tableau dashboard to visualize Tesla stock trends using data sourced via the GOOGLEFINANCE function in Google Sheets. The dashboard supports filtering across different timeframes. <br><a href=\"https://public.tableau.com/app/profile/vijay.rodrigues/viz/shared/HZ4YZ66YJ\" target=\"_blank\">Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/TeslaStockPriceDashboard')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746732598/tesla_stock_market_logo_nrlb0e.png')"></div>
               <div class="project-content">
                 <h3>Tesla Stock Price Dashboard</h3>
-                <p>Interactive Tableau dashboard tracking Tesla stock prices</p>
+                <p>Interactive Tableau dashboard tracking Tesla stock prices with dynamic filtering.</p>
               </div>
             </div>
-            <div class="project" onclick="openModal('Exploratory Data Analysis (EDA) on HRA Records Dataset', 'This project involves exploring a vast HRA dataset containing over 5 million records, retrieved from a SQL Server database using PyODBC. The data is then transformed into a Spark DataFrame for analysis in Jupyter Notebook. This approach allows the handling of protected database records for feature engineering, transformations, and comprehensive exploratory data analysis (EDA), revealing valuable insights for HR decision-making.', 'https://github.com/VijayRodrigues/EDA_HRA_Records_Spark_SQL')">
+
+            <div class="project" onclick="openModal('Exploratory Data Analysis (EDA) on HRA Records Dataset', 'Explored a vast HRA dataset containing over 5 million records, retrieved from SQL Server using PyODBC. Data transformed into Spark DataFrame for analysis in Jupyter Notebook.', 'https://github.com/VijayRodrigues/EDA_HRA_Records_Spark_SQL')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746734962/eda_hr_analytics_logo_q2gims.png')"></div>
               <div class="project-content">
-                <h3>Exploratory Data Analysis (EDA) on HRA Records Dataset</h3>
-                <p>Leveraging PyODBC and Spark for In-Depth Analysis of Human Resources Data</p>
+                <h3>EDA on HRA Records Dataset</h3>
+                <p>In-Depth Analysis of 5M+ Human Resources Data using PyODBC and Spark.</p>
               </div>
             </div>
-
-            </div>
-
-
+          </div>
 
           <!-- Page 2 -->
           <div class="project-page">
-            <div class="project" onclick="openModal('Temperature Forecasting with Machine Learning', 'This project applies machine learning techniques to improve next-day maximum and minimum temperature forecasts. The model is trained on LDAPS weather data provided by the Korea Meteorological Administration, focused on Seoul, South Korea. It aims to provide more accurate and reliable forecasts compared to traditional models.', 'https://github.com/VijayRodrigues/Korea-Meteorological-Administration-Temperature-Forecast')">
+            <div class="project" onclick="openModal('Temperature Forecasting with Machine Learning', 'Applied machine learning techniques to improve next-day maximum and minimum temperature forecasts. Model trained on LDAPS weather data from the Korea Meteorological Administration.', 'https://github.com/VijayRodrigues/Korea-Meteorological-Administration-Temperature-Forecast')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746737312/korea_meteorigical_temperature_logo_myngzu.webp')"></div>
               <div class="project-content">
-                <h3>Temperature Forecasting with Machine Learning</h3>
-                <p>Enhancing Daily Temperature Predictions Using ML Models</p>
+                <h3>Temperature Forecasting with ML</h3>
+                <p>Enhancing Daily Temperature Predictions Using ML Models.</p>
               </div>
             </div>
-            
-            <div class="project" onclick="openModal('Restaurant Data Visualization Dashboard', 'Designed a Tableau dashboard to visualize Zomato Bangalore restaurant data, enabling insights into customer ratings, popular cuisines, price ranges, and top-rated areas for better decision-making. <br><a href=\'https://public.tableau.com/app/profile/vijay.rodrigues/viz/ZomatoBangaloreRestaurants_16192837257910/Dashboard1?publish=yes\' target=\'_blank\'>Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/Zomato_Bangalore_Restaurants')">
+
+            <div class="project" onclick="openModal('Restaurant Data Visualization Dashboard', 'Designed a Tableau dashboard to visualize Zomato Bangalore restaurant data, enabling insights into customer ratings, popular cuisines, price ranges, and top-rated areas. <br><a href=\"https://public.tableau.com/app/profile/vijay.rodrigues/viz/ZomatoBangaloreRestaurants_16192837257910/Dashboard1?publish=yes\" target=\"_blank\">Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/Zomato_Bangalore_Restaurants')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1749285289/zomato_bangalore_restaurants_h4ckzy.png')"></div>
               <div class="project-content">
                 <h3>Restaurant Data Visualization Dashboard</h3>
-                <p>Interactive Tableau dashboard analyzing Zomato restaurant data in Bangalore across ratings, cuisines, and locations.</p>
+                <p>Interactive Tableau dashboard analyzing Zomato restaurant data across ratings and cuisines.</p>
               </div>
             </div>
 
-            <div class="project" onclick="openModal('Sales and Profit Analysis Dashboard', 'A Tableau-based dashboard designed for monitoring key business metrics, such as sales, profit, and quantity sold. This dashboard provides actionable insights into how different regions and product categories are performing.   <br><a href=\'https://public.tableau.com/app/profile/vijay.rodrigues/viz/DiscountMartSalesAnalytics_16192428586720/Dashboard1\' target=\'_blank\'>Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/Sales_Analytics_Tableau')">
+            <div class="project" onclick="openModal('Sales and Profit Analysis Dashboard', 'A Tableau-based dashboard designed for monitoring key business metrics such as sales, profit, and quantity sold. Provides actionable insights into regional and product category performance. <br><a href=\"https://public.tableau.com/app/profile/vijay.rodrigues/viz/DiscountMartSalesAnalytics_16192428586720/Dashboard1\" target=\"_blank\">Click here to view Tableau Dashboard</a>.', 'https://github.com/VijayRodrigues/Sales_Analytics_Tableau')">
               <div class="project-image" style="background-image: url('https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746736430/discountmart_sales_dashboard_logo_jcvprp.png')"></div>
               <div class="project-content">
                 <h3>Sales and Profit Analysis Dashboard</h3>
-                <p>Analyze Sales, Profits, and Quantities Sold Across Regions</p>
+                <p>Analyze Sales, Profits, and Quantities Across Regions and Product Categories.</p>
               </div>
             </div>
-
-          
-
-            
-           
           </div>
-
-
-
         </div>
+
         <div class="slider-controls">
           <button class="slider-button" onclick="slideProjects(-1)">&#10094; Prev</button>
           <div class="page-indicator" id="pageIndicator">1/2</div>
@@ -445,20 +341,11 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
+    <!-- Certifications Section -->
     <section id="certifications" class="certifications" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
       <h2>Certifications</h2>
       <div class="slider-container">
         <div class="certification-slider" id="certificationSlider">
-          <!-- Certification Rows (Each Row should hold 3 certifications) -->
           <div class="certification-slide">
             <a href="https://credentials.databricks.com/41e233c9-530e-45d7-b397-61bbb4ef499b#acc.8IOTGvSV" class="cert-card all_cert" target="_blank">
               <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746388493/databricks_lakehouse_image_ueypzt.png" alt="Databricks Logo">
@@ -477,12 +364,12 @@
             <a href="https://www.credly.com/badges/bee5ccfa-e747-488c-a799-ff4c3bc0bf18/public_url" class="cert-card all_cert" target="_blank">
               <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746389049/PCEP_certificate_logo_p8lg7b.jpg" alt="Python Logo">
               <div class="cert-text">
-                <h3>[PCEP-30-02] PCEP – Certified Entry-Level Python Programmer</h3>
+                <h3>PCEP – Certified Entry-Level Python Programmer</h3>
                 <p>Issued by Python Institute · Apr 2024</p>
               </div>
             </a>
           </div>
-    
+
           <div class="certification-slide">
             <a href="https://achieve.snowflake.com/c883494d-3932-46c4-abf6-f135e3990378#acc.A4qoBeI1" class="cert-card all_cert" target="_blank">
               <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746389577/hands_on_essential_data_lake_sbyhho.png" alt="Snowflake Logo">
@@ -499,7 +386,7 @@
               </div>
             </a>
             <a href="https://achieve.snowflake.com/63ffdad7-6ac9-4be7-a8c3-4b416be619c9#acc.uZaE9lxD" class="cert-card all_cert" target="_blank">
-              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746389820/hands_on_essential_data_applications_emb5k3.png" alt="Snowflake Logo">
+              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746389820/hands_on_essential_data_applications_emb5c3.png" alt="Snowflake Logo">
               <div class="cert-text">
                 <h3>Hands-On Essentials: Data Applications</h3>
                 <p>Issued by Snowflake · Oct 2024</p>
@@ -507,12 +394,11 @@
             </a>
           </div>
 
-
           <div class="certification-slide">
             <a href="https://achieve.snowflake.com/0d3ded16-b3f3-4e21-a066-82d8d93f7edf#acc.jeSmI7dt" class="cert-card all_cert" target="_blank">
               <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746389990/hands_on_essential_colab_and_marketplace_a9uuok.png" alt="Snowflake Logo">
               <div class="cert-text">
-                <h3>Hands-On Essentials: Collaboration and Marketplace</h3>
+                <h3>Hands-On Essentials: Collaboration & Marketplace</h3>
                 <p>Issued by Snowflake · Oct 2024</p>
               </div>
             </a>
@@ -532,19 +418,16 @@
             </a>
           </div>
 
-
-
-
           <div class="certification-slide">
             <a href="https://www.credly.com/earner/earned/badge/598caee3-250d-40bf-bc11-c3b3517ffc2e" class="cert-card all_cert" target="_blank">
-              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746390658/astronomer_airflow_fundamentals_wso1iw.png" alt="Databricks Logo">
+              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746390658/astronomer_airflow_fundamentals_wso1iw.png" alt="Astronomer Logo">
               <div class="cert-text">
                 <h3>Astronomer Certification: Apache Airflow Fundamentals</h3>
                 <p>Issued by Astronomer · Oct 2024</p>
               </div>
             </a>
             <a href="https://www.credly.com/earner/earned/badge/73f58b62-97ae-42c6-ad2d-3b1e24c91126" class="cert-card all_cert" target="_blank">
-              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746390458/astronomer_airflow_dag_authoring_ivfxji.png" alt="Databricks Logo">
+              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746390458/astronomer_airflow_dag_authoring_ivfxji.png" alt="Astronomer Logo">
               <div class="cert-text">
                 <h3>Astronomer Certification: Apache Airflow DAG Authoring</h3>
                 <p>Issued by Astronomer · Oct 2024</p>
@@ -559,9 +442,6 @@
             </a>
           </div>
 
-
-
-    
           <div class="certification-slide">
             <a href="https://credentials.databricks.com/43e82103-9f0c-4779-b774-e43c88d5f566#acc.UNb8P7BV" class="cert-card all_cert" target="_blank">
               <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746387421/associate-badge-de_bguo9p.png" alt="Databricks Logo">
@@ -578,49 +458,33 @@
               </div>
             </a>
             <a href="https://www.coursera.org/account/accomplishments/verify/BRUPRFE10TEI" class="cert-card all_cert" target="_blank">
-              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1747069621/gen-ai_for_everyone_image_ja7x9h.png" alt="Python Logo">
+              <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1747069621/gen-ai_for_everyone_image_ja7x9h.png" alt="DeepLearning.ai Logo">
               <div class="cert-text">
                 <h3>Generative AI for Everyone</h3>
                 <p>Issued by DeepLearning.ai · Oct 2024</p>
               </div>
             </a>
           </div>
-
-
-
         </div>
       </div>
-    
+
       <div class="slider-controls">
         <button class="slider-button" onclick="slideCertifications(-1)">&#10094; Prev</button>
-        <div class="page-indicator" id="certPageIndicator">1/2</div>
+        <div class="page-indicator" id="certPageIndicator">1/5</div>
         <button class="slider-button" onclick="slideCertifications(1)">Next &#10095;</button>
       </div>
     </section>
-    
 
-
-    
-
-
-    
-
-
-
-
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials" itemscope itemtype="https://schema.org/Review">
       <h2>Testimonials</h2>
       <div class="testimonial-slider-wrapper">
         <div class="testimonial-slider" id="testimonialSlider">
-          
-          <!-- Slide 1 -->
-          <div class="testimonial-card testimo_card">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; height: 25px;" alt="Quote Logo"><br><br><br><br>
-            <p>I recommend Vijay as a dedicated and talented professional. During our time working together, 
-               I was consistently impressed with his ability to quickly learn and master various tools. 
-               He consistently produced high-quality deliverables and demonstrated exceptional problem-solving skills. Keep rocking, Vijay!</p>
+          <div class="testimonial-card">
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; width: 25px;" alt="Quote Logo">
+            <p>I recommend Vijay as a dedicated and talented professional. During our time working together, I was consistently impressed with his ability to quickly learn and master various tools. He consistently produced high-quality deliverables and demonstrated exceptional problem-solving skills. Keep rocking, Vijay!</p>
             <div class="testimonial-author">
-              <div class="author-info"><br><br><br><br><br>
+              <div class="author-info">
                 <h4>Richard Churchill A</h4>
                 <p>AVP Implementation Engineer</p>
                 <p class="testimonial-company">Current Company: Chubb</p>
@@ -629,15 +493,11 @@
             </div>
           </div>
 
-          <!-- Slide 2 -->
           <div class="testimonial-card">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; height: 25px;" alt="Quote Logo"><br><br><br><br>
-            <p>I had the opportunity to remotely work with Vijay. His great communication skills made easier the physical distance challenges. 
-               Besides converting SAS codes in SQL language, Vijay was given responsibilities of a SQL developer and that was not part of his expertise.
-               He demonstrates commitment to learn new skills and perform what was necessary. 
-               Multiple ingestions and corrections in our server data were possible due his hard work and dedication</p>
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; width: 25px;" alt="Quote Logo">
+            <p>I had the opportunity to remotely work with Vijay. His great communication skills made easier the physical distance challenges. Besides converting SAS codes in SQL language, Vijay was given responsibilities of a SQL developer and that was not part of his expertise. He demonstrates commitment to learn new skills and perform what was necessary. Multiple ingestions and corrections in our server data were possible due his hard work and dedication.</p>
             <div class="testimonial-author">
-              <div class="author-info"><br><br><br>
+              <div class="author-info">
                 <h4>Heloisa Bete</h4>
                 <p>Actuarial Transform Lead & Junior Board Member</p>
                 <p class="testimonial-company">Current Company: Chubb</p>
@@ -646,14 +506,11 @@
             </div>
           </div>
 
-          <!-- Slide 3 -->
-           <div class="testimonial-card">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; height: 25px;" alt="Quote Logo"><br><br><br><br>
-            <p>Vijay is a very strong data and IT associate. 
-               He is instrumental in helping automate and streamline our price monitoring process. 
-               He is a great business partner and his contributions and expertise are highly valued by me and our team.</p>
+          <div class="testimonial-card">
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; width: 25px;" alt="Quote Logo">
+            <p>Vijay is a very strong data and IT associate. He is instrumental in helping automate and streamline our price monitoring process. He is a great business partner and his contributions and expertise are highly valued by me and our team.</p>
             <div class="testimonial-author">
-              <div class="author-info"><br><br><br><br><br><br>
+              <div class="author-info">
                 <h4>Mariano Blanco</h4>
                 <p>Vice President and Actuary</p>
                 <p class="testimonial-company">Current Company: Chubb</p>
@@ -662,14 +519,11 @@
             </div>
           </div>
 
-          <!-- Slide 4 -->
-           <div class="testimonial-card">
-            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; height: 25px;" alt="Quote Logo"><br><br><br><br>
-            <p>Vijay is a quick learner and eager to work. He is detailed and thorough and responsive. 
-               He assisted in the programming. and automation of several projects in our international pricing unit. 
-               He showed great initiative in working with big data and developing creative solutions.</p>
+          <div class="testimonial-card">
+            <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746796351/quotes_testimonies_logo_sw3lsr.png" style="height: 25px; width: 25px;" alt="Quote Logo">
+            <p>Vijay is a quick learner and eager to work. He is detailed and thorough and responsive. He assisted in the programming and automation of several projects in our international pricing unit. He showed great initiative in working with big data and developing creative solutions.</p>
             <div class="testimonial-author">
-              <div class="author-info"><br><br><br><br><br>
+              <div class="author-info">
                 <h4>Marie Christian</h4>
                 <p>AVP, Global Casualty Actuarial</p>
                 <p class="testimonial-company">Current Company: Chubb</p>
@@ -677,12 +531,9 @@
               </div>
             </div>
           </div>
-
-
-
-          <!-- Add more slides as needed -->
         </div>
       </div>
+
       <div class="slider-controls">
         <button class="slider-button" onclick="slideTestimonials(-1)">&#10094; Prev</button>
         <div class="page-indicator" id="testimonialIndicator">1</div>
@@ -690,394 +541,298 @@
       </div>
     </section>
 
-
-
-
-
-    
-
+    <!-- Contact Section -->
     <section id="contact" class="contact-section" itemscope itemtype="https://schema.org/Person">
-  <h2>Contact Me</h2>
+      <h2>Contact Me</h2>
 
-  <!-- Added Address and Email Info -->
-  <div class="contact-info">
-  <p><img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746797203/address_logo_kzghz3.png" style="height: 25px; width: 25px; margin-right: 7px;" alt="Address Icon"> <strong>Address:</strong> Bengaluru, Karnataka</p>
-  <p><img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746797203/email_logo_vvyks7.png" style="height: 25px; width: 25px; margin-right: 7px;" alt="Email Icon"> <strong>Email:</strong>  rodriguesvijay92@gmail.com</a></p>
-</div>
-
-  <form id="contact-form" action="https://formspree.io/f/xnqwqldj" method="POST">
-    <div class="form-row">
-      <div class="form-group">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="Enter your First Name" name="first-name" required autocomplete="off">
+      <div class="contact-info">
+        <p>
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746797203/address_logo_kzghz3.png" style="height: 25px; width: 25px; margin-right: 7px;" alt="Address Icon">
+          <strong>Address:</strong> Bengaluru, Karnataka
+        </p>
+        <p>
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746797203/email_logo_vvyks7.png" style="height: 25px; width: 25px; margin-right: 7px;" alt="Email Icon">
+          <strong>Email:</strong> vijay@vijayrodrigues.com
+        </p>
       </div>
-      <div class="form-group">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" placeholder="Enter your Last Name" name="last-name" required autocomplete="off">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your Email ID" name="_replyto" required autocomplete="off">
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" placeholder="Type your message...." name="message" rows="5" required autocomplete="off"></textarea>
-    </div>
-    <button type="submit" class="submit-btn">Send Message</button>
-  </form>
-</section>
 
+      <form id="contact-form" action="https://formspree.io/f/xnqwqldj" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Enter your First Name" name="first-name" required autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter your Last Name" name="last-name" required autocomplete="off">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your Email ID" name="_replyto" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Type your message...." name="message" rows="5" required autocomplete="off"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
 
-    
-
-
-
+    <!-- Footer -->
     <footer class="footer">
       <div class="social-links">
         <a href="https://github.com/VijayRodrigues" target="_blank" aria-label="GitHub">
-          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746461408/github_devicons_footer_p49jyf.svg" alt="GitHub" />
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746461408/github_devicons_footer_p49jyf.svg" alt="GitHub">
         </a>
         <a href="https://www.linkedin.com/in/vijayrodrigues" target="_blank" aria-label="LinkedIn">
-          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746461398/linkedin_devicons_footer_mq2y0r.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.hackerrank.com/profile/vijayrodrigues18" target="_blank" aria-label="HackerRank">
-          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746461402/hackerrank_devicons_footer_xhgrvp.svg" alt="HackerRank" />
+          <img src="https://res.cloudinary.com/dxpj1p1iy/image/upload/v1746461398/linkedin_devicons_footer_mq2y0r.png" alt="LinkedIn">
         </a>
       </div>
-      
     </footer>
-
-
-
-
-<!-- Modal Structure -->
-<div id="projectModal" style="display: none;" class="modal-overlay">
-  <div class="modal-content">
-    <h2 id="modalTitle"></h2>
-    <p id="modalDescription"></p>
-    <a id="modalLink" href="#" target="_blank">View Project</a>
-    <span class="modal-close" onclick="closeModal()">&times;</span>
   </div>
-</div>
 
+  <!-- Project Modal -->
+  <div id="projectModal" style="display: none;" class="modal-overlay">
+    <div class="modal-content">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <a id="modalLink" href="#" target="_blank">View Project</a>
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+    </div>
+  </div>
 
+  <!-- Scripts -->
+  <script>
+    // Google Translate Init
+    function googleTranslateElementInit2() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+      }, 'google_translate_element2');
+    }
 
+    // Google Translate Event
+    function GTranslateFireEvent(el, eventName) {
+      try {
+        if (document.createEvent) {
+          const event = document.createEvent('HTMLEvents');
+          event.initEvent(eventName, true, true);
+          el.dispatchEvent(event);
+        } else {
+          const event = document.createEventObject();
+          el.fireEvent('on' + eventName, event);
+        }
+      } catch (e) {}
+    }
 
-<script>
-  
-  function googleTranslateElementInit2() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      autoDisplay: false
-    }, 'google_translate_element2');
-  }
-
-
-
-
-
-
-
-
-  function GTranslateFireEvent(el, eventName) {
-    try {
-      if (document.createEvent) {
-        var event = document.createEvent("HTMLEvents");
-        event.initEvent(eventName, true, true);
-        el.dispatchEvent(event);
+    function doGTranslate(langPair) {
+      if (langPair.value) langPair = langPair.value;
+      if (langPair === '') return;
+      const lang = langPair.split('|')[1];
+      const selects = document.getElementsByTagName('select');
+      let combo;
+      for (let i = 0; i < selects.length; i++) {
+        if (selects[i].className === 'goog-te-combo') {
+          combo = selects[i];
+          break;
+        }
+      }
+      if (!combo || combo.length === 0 || combo.innerHTML.length === 0) {
+        setTimeout(() => doGTranslate(langPair), 500);
       } else {
-        var event = document.createEventObject();
-        el.fireEvent("on" + eventName, event);
-      }
-    } catch (e) {}
-  }
-
-  function doGTranslate(langPair) {
-    if (langPair.value) langPair = langPair.value;
-    if (langPair == '') return;
-    var lang = langPair.split('|')[1];
-    var combo;
-    var selects = document.getElementsByTagName('select');
-    for (var i = 0; i < selects.length; i++) {
-      if (selects[i].className == 'goog-te-combo') {
-        combo = selects[i];
-        break;
+        combo.value = lang;
+        GTranslateFireEvent(combo, 'change');
+        GTranslateFireEvent(combo, 'change');
       }
     }
-    if (!combo || combo.length == 0 || combo.innerHTML.length == 0) {
-      setTimeout(function() {
-        doGTranslate(langPair)
-      }, 500);
-    } else {
-      combo.value = lang;
-      GTranslateFireEvent(combo, 'change');
-      GTranslateFireEvent(combo, 'change');
-    }
-  }
 
-
-
-
-
-
-
-
+    // Employment Data
     const employmentData = {
       chubb: {
-        title: "Senior Data Engineer - 1",
+        title: 'Senior Data Engineer',
         bullets: [
-          "<b>Architected and implemented scalable data pipelines</b> in Databricks, integrating multiple sources and enhancing ETL speed by <b>30%</b>, which improved Qlik Sense dashboard reporting.",
-          "<b>Migrated 6 legacy SSIS packages</b> from on-prem SQL Server to Apache Spark, reducing load times by <b>25%</b> and minimizing reliance on licensed platforms.",
-          "<b>Designed a Spark-based reconciliation workflow</b> for Premiums and Claims data across Oracle, Azure SQL, and Actuarial Server, improving data accuracy by <b>40%</b>.",
-          "<b>Optimized 15+ years of ACE/CHUBB premium transactions</b> using Spark and multithreading, cutting data extraction time from <b>8 to 3 hours</b>, increasing efficiency by <b>60%</b>.",
-          "<b>Developed a Python reconciliation framework</b> that automated data validation, saving <b>4 hours of manual effort</b> and improving report efficiency by <b>90%</b>."
+          '<b>Architected and implemented scalable data pipelines</b> in Databricks, integrating multiple sources and enhancing ETL speed by <b>30%</b>.',
+          '<b>Migrated 6 legacy SSIS packages</b> from on-prem SQL Server to Apache Spark, reducing load times by <b>25%</b>.',
+          '<b>Designed a Spark-based reconciliation workflow</b> for Premiums and Claims data, improving data accuracy by <b>40%</b>.',
+          '<b>Optimized 15+ years of premium transactions</b> using Spark, cutting data extraction time from <b>8 to 3 hours</b>.',
+          '<b>Developed a Python reconciliation framework</b> that automated data validation, saving <b>4 hours</b> of manual effort.'
         ]
       },
-      tcs: {
-        title: "Data Analyst",
+      proziod: {
+        title: 'Data Analyst',
         bullets: [
-          "<b>Developed Python automation</b> to streamline RFP preparation, saving <b>3 hours</b> of manual work and increasing efficiency by <b>25%</b>.",
-          "<b>Designed and optimized process workflows</b>, reducing turnaround time and saving approximately <b>2 hours</b> compared to earlier methods.",
-          "<b>Acted as a key liaison</b> between Account Managers and Retailers, gathering business requirements for tenders and managing <b>2 key accounts</b>.",
-          "<b>Automated data quality checks</b>, reducing data-related errors by <b>25%</b> and improving report reliability for stakeholders.",
-          "<b>Improved cross-functional collaboration</b> by translating business needs into actionable insights, ensuring better alignment during the tender process."
+          '<b>Developed Python automation</b> to streamline RFP preparation, saving <b>3 hours</b> of manual work.',
+          '<b>Designed and optimized process workflows</b>, reducing turnaround time by <b>2 hours</b>.',
+          '<b>Acted as key liaison</b> between Account Managers and Retailers, managing <b>2 key accounts</b>.',
+          '<b>Automated data quality checks</b>, reducing data-related errors by <b>25%</b>.',
+          '<b>Improved cross-functional collaboration</b> by translating business needs into actionable insights.'
         ]
       },
-      company3: {
-        title: "Technical Recruiter",
+      teksystems: {
+        title: 'Technical Recruiter',
         bullets: [
-          "<b>Reviewed and screened profiles</b> for <b>10+ roles weekly</b>, submitting quality candidates to the Client Manager for a streamlined hiring process.",
-          "<b>Translated business requirements</b> from <b>4+ hiring managers</b> into actionable talent acquisition strategies, ensuring targeted recruitment efforts.",
-          "<b>Supported Fortune 500 clients</b> across <b>5 industries</b>—Banking, Automotive, Retail, E-Commerce, and Healthcare—enhancing cross-domain hiring effectiveness.",
-          "<b>Collected and analyzed market intelligence</b> on job trends and competitive positions to inform recruitment strategy and improve candidate alignment.",
-          "<b>Contributed to end-to-end recruitment</b> by coordinating with stakeholders, improving hiring cycle efficiency and candidate quality."
+          '<b>Reviewed and screened profiles</b> for <b>10+ roles weekly</b>, submitting quality candidates.',
+          '<b>Translated business requirements</b> from <b>4+ hiring managers</b> into actionable strategies.',
+          '<b>Supported Fortune 500 clients</b> across <b>5 industries</b>.',
+          '<b>Collected and analyzed market intelligence</b> on job trends and competitive positions.',
+          '<b>Contributed to end-to-end recruitment</b> by coordinating with stakeholders.'
         ]
       }
     };
-  
+
     function openEmploymentModal(companyKey) {
       const data = employmentData[companyKey];
-      document.getElementById("modal-title").innerHTML = data.title;
-      const list = document.getElementById("modal-description");
-      list.innerHTML = data.bullets.map(b => `<li>${b}</li>`).join("");
-      document.getElementById("employment-modal").classList.add("show");
+      document.getElementById('modal-title').innerHTML = data.title;
+      const list = document.getElementById('modal-description');
+      list.innerHTML = data.bullets.map(b => `<li>${b}</li>`).join('');
+      document.getElementById('employment-modal').classList.add('show');
     }
-  
+
     function closeEmploymentModal() {
-      document.getElementById("employment-modal").classList.remove("show");
+      document.getElementById('employment-modal').classList.remove('show');
     }
-  
+
     function clickOutsideModal(event) {
-      const modalContent = document.querySelector(".modal-content");
+      const modalContent = document.querySelector('.modal-content');
       if (!modalContent.contains(event.target)) {
         closeEmploymentModal();
       }
     }
 
+    // Projects Slider
+    window.onload = function () {
+      let currentPage = 0;
+      const projectPages = document.querySelectorAll('.project-page');
+      const totalPages = projectPages.length;
+      const projectSlider = document.getElementById('projectSlider');
 
-
-
-
-
-window.onload = function () {
-  let currentPage = 0;
-  const projectPages = document.querySelectorAll('.project-page');
-  const totalPages = projectPages.length;
-  const projectSlider = document.getElementById('projectSlider');
-
-  function updatePageIndicator() {
-    const indicator = document.getElementById('pageIndicator');
-    if (indicator) {
-      indicator.textContent = `${currentPage + 1}/${totalPages}`;
-    }
-  }
-
-  function slideProjects(direction) {
-    currentPage += direction;
-    if (currentPage < 0) currentPage = totalPages - 1;
-    else if (currentPage >= totalPages) currentPage = 0;
-
-    projectSlider.style.transform = `translateX(-${currentPage * 100}%)`;
-    updatePageIndicator();
-  }
-
-  updatePageIndicator();
-  projectSlider.style.transform = 'translateX(0)';
-  window.slideProjects = slideProjects;
-
-  // Modal setup
-  window.openModal = function (title, description, link) {
-    document.getElementById('modalTitle').textContent = title;
-    document.getElementById('modalDescription').innerHTML = description;
-    if (link) {
-      document.getElementById('modalLink').href = link;
-    }
-    document.getElementById('projectModal').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  };
-
-  window.closeModal = function () {
-    document.getElementById('projectModal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-  };
-
-  window.onclick = function (event) {
-    const modal = document.getElementById('projectModal');
-    if (event.target === modal) {
-      window.closeModal();
-    }
-  };
-
-
-
-
-
-    
-    // Calculate experience from Jan 17, 2019 to today
-    const startDate = new Date("2019-01-17");
-    const today = new Date();
-    let months =
-      (today.getFullYear() - startDate.getFullYear()) * 12 +
-      (today.getMonth() - startDate.getMonth());
-
-    if (today.getDate() < startDate.getDate()) {
-      months--;
-    }
-
-    const experienceYears = (months / 12).toFixed(1);
-    const expElement = document.getElementById("exp-years");
-    if (expElement) {
-      expElement.textContent = experienceYears;
-    }
-  };
-
-
-
-
-
-
- 
-// Get the dropdown elements
-const resumeDropdown = document.querySelector('.resume-dropdown');
-const dropdownContent = document.querySelector('.resume-dropdown-content');
-
-// Toggle the dropdown visibility when the button is clicked
-resumeDropdown.addEventListener('click', (event) => {
-  // Prevent the click from propagating to the document and causing an immediate hide
-  event.stopPropagation();
-
-  // Toggle the dropdown visibility using 'active' class
-  resumeDropdown.classList.toggle('active');
-});
-
-// Close the dropdown if clicking outside of it
-document.addEventListener('click', (event) => {
-  if (!resumeDropdown.contains(event.target)) {
-    resumeDropdown.classList.remove('active');
-  }
-});
-
-
-
-
-
-
-  let certCurrentIndex = 0;
-  const certSlides = document.querySelectorAll('.certification-slide');
-  const certSlider = document.getElementById('certificationSlider');
-  const certPageIndicator = document.getElementById('certPageIndicator');
-  
-  function slideCertifications(direction) {
-    certCurrentIndex += direction;
-
-    // Prevent going out of bounds
-    if (certCurrentIndex < 0) certCurrentIndex = 0;
-    if (certCurrentIndex >= certSlides.length) certCurrentIndex = certSlides.length - 1;
-
-    // Update slider position
-    certSlider.style.transform = `translateX(-${certCurrentIndex * 100}%)`; // Slide the visible content
-    certPageIndicator.textContent = `${certCurrentIndex + 1}/${certSlides.length}`; // Update page indicator
-  }
-
-
-
-
-
-
-  const testimonialSlider = document.getElementById("testimonialSlider");
-  const testimonialCards = testimonialSlider.children;
-  const testimonialsPerPage = 3;
-  let testimonialIndex = 0;
-
-  function slideTestimonials(direction) {
-    const totalSlides = Math.ceil(testimonialCards.length / testimonialsPerPage);
-    testimonialIndex += direction;
-
-    if (testimonialIndex < 0) testimonialIndex = 0;
-    if (testimonialIndex >= totalSlides) testimonialIndex = totalSlides - 1;
-
-    const slideWidth = testimonialSlider.clientWidth;
-    testimonialSlider.style.transform = `translateX(-${testimonialIndex * slideWidth}px)`;
-
-    document.getElementById("testimonialIndicator").innerText = `${testimonialIndex + 1}`;
-  }
-
-  window.addEventListener("resize", () => {
-    slideTestimonials(0); // Reset transform on resize
-  });
-
-
-
-
-
-
-  const form = document.getElementById('contact-form');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form submission
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-    })
-      .then(response => {
-        if (response.ok) {
-          // Create the success modal dynamically
-          const modal = document.createElement('div');
-          modal.classList.add('success-modal');
-          modal.innerHTML = `
-            <div class="modal-content">
-              <p>Your message has been sent successfully!</p>
-            </div>
-          `;
-          
-          // Append the modal to the body
-          document.body.appendChild(modal);
-
-          // Display the modal
-          modal.style.display = 'block';
-
-          // Hide modal after 2 seconds
-          setTimeout(() => {
-            modal.style.display = 'none';
-            modal.remove(); // Remove the modal from the DOM after it's hidden
-          }, 2000);
-
-          // Reset the form after submission
-          form.reset();
-        } else {
-          console.error('Form submission failed.');
+      function updatePageIndicator() {
+        const indicator = document.getElementById('pageIndicator');
+        if (indicator) {
+          indicator.textContent = `${currentPage + 1}/${totalPages}`;
         }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  });
+      }
 
-</script>
- 
+      window.slideProjects = function (direction) {
+        currentPage += direction;
+        if (currentPage < 0) currentPage = totalPages - 1;
+        else if (currentPage >= totalPages) currentPage = 0;
+        projectSlider.style.transform = `translateX(-${currentPage * 100}%)`;
+        updatePageIndicator();
+      };
+
+      updatePageIndicator();
+      projectSlider.style.transform = 'translateX(0)';
+
+      // Project Modal
+      window.openModal = function (title, description, link) {
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalDescription').innerHTML = description;
+        if (link) {
+          document.getElementById('modalLink').href = link;
+        }
+        document.getElementById('projectModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closeModal = function () {
+        document.getElementById('projectModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+      };
+
+      window.onclick = function (event) {
+        const modal = document.getElementById('projectModal');
+        if (event.target === modal) {
+          window.closeModal();
+        }
+      };
+
+      // Experience Years Calculation
+      const startDate = new Date('2019-01-17');
+      const today = new Date();
+      let months = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+      if (today.getDate() < startDate.getDate()) {
+        months--;
+      }
+      const experienceYears = (months / 12).toFixed(1);
+      const expElement = document.getElementById('exp-years');
+      if (expElement) {
+        expElement.textContent = experienceYears;
+      }
+
+      // Resume Dropdown
+      const resumeDropdown = document.querySelector('.resume-dropdown');
+      resumeDropdown.addEventListener('click', (event) => {
+        event.stopPropagation();
+        resumeDropdown.classList.toggle('active');
+      });
+      document.addEventListener('click', (event) => {
+        if (!resumeDropdown.contains(event.target)) {
+          resumeDropdown.classList.remove('active');
+        }
+      });
+
+      // Certifications Slider
+      let certCurrentIndex = 0;
+      const certSlides = document.querySelectorAll('.certification-slide');
+      const certSlider = document.getElementById('certificationSlider');
+      const certPageIndicator = document.getElementById('certPageIndicator');
+
+      window.slideCertifications = function (direction) {
+        certCurrentIndex += direction;
+        if (certCurrentIndex < 0) certCurrentIndex = 0;
+        if (certCurrentIndex >= certSlides.length) certCurrentIndex = certSlides.length - 1;
+        certSlider.style.transform = `translateX(-${certCurrentIndex * 100}%)`;
+        certPageIndicator.textContent = `${certCurrentIndex + 1}/${certSlides.length}`;
+      };
+
+      // Testimonials Slider
+      const testimonialSlider = document.getElementById('testimonialSlider');
+      const testimonialCards = testimonialSlider.children;
+      const testimonialsPerPage = 3;
+      let testimonialIndex = 0;
+
+      window.slideTestimonials = function (direction) {
+        const totalSlides = Math.ceil(testimonialCards.length / testimonialsPerPage);
+        testimonialIndex += direction;
+        if (testimonialIndex < 0) testimonialIndex = 0;
+        if (testimonialIndex >= totalSlides) testimonialIndex = totalSlides - 1;
+        const slideWidth = testimonialSlider.clientWidth;
+        testimonialSlider.style.transform = `translateX(-${testimonialIndex * slideWidth}px)`;
+        document.getElementById('testimonialIndicator').innerText = `${testimonialIndex + 1}`;
+      };
+
+      window.addEventListener('resize', () => {
+        window.slideTestimonials(0);
+      });
+
+      // Contact Form
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+        })
+          .then(response => {
+            if (response.ok) {
+              const modal = document.createElement('div');
+              modal.classList.add('success-modal');
+              modal.innerHTML = '<div class="modal-content"><p>Your message has been sent successfully!</p></div>';
+              document.body.appendChild(modal);
+              modal.style.display = 'block';
+              setTimeout(() => {
+                modal.style.display = 'none';
+                modal.remove();
+              }, 2000);
+              form.reset();
+            }
+          })
+          .catch(error => console.error('Error:', error));
+      });
+    };
+  </script>
 </body>
 </html>
